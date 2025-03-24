@@ -5,6 +5,11 @@ on:
     tags:
       - '*'
 
+# Ajout des permissions explicites pour permettre l'écriture aux packages
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
